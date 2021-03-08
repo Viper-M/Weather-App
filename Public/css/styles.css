@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+:focus {
+    outline: none;
+}
+
+::-moz-focus-inner {
+    border: 0;
+}
+
+:root {
+    --cl--Orange: #EE5C4D;
+    --cl--Green1: #50798D;
+    --cl--Green2: #385F74;
+    --cl--Green3: #214F6B;
+    --cl--Green4: #20485E;
+    --cl--Green5: #164056;
+    --cl--Green6: #55778B;
+    --cl--DarkGreen1: #16394C;
+    --cl--DarkGreen2: #608094;
+    --cl--DarkGreen3: #F5F5F5;
+    --ff--Opensans: 'Open Sans', sans-serif;
+}
+
+body {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    font-family: var(--ff--Opensans);
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: var(--ff--Opensans);
+    font-weight: 100;
+    margin: 1rem 0rem 0rem 2.5rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-family: var(--ff--Opensans);
+    font-weight: 100;
+    margin: 0.7rem 0rem 0rem 2.5rem;
+}
+
+h3 {
+    font-family: var(--ff--Opensans);
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-family: var(--ff--Opensans);
+    font-weight: 100;
+    margin: 3rem 0rem 0rem 0.5rem;
+    font-size: 1.2rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/*   FRONTPAGE   */
+
+/*   +++++++   */
+
+#frontpage {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url(./images/background.png);
+    background-size: 100rem 76rem;
+    background-position: 0px -150px;
+}
+
+#developer {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0rem;
+}
+
+#reviewer {
+    position: absolute;
+    bottom: 1rem;
+    right: 3rem;
+}
+
+#reviewer a {
+    text-decoration: underline;
+}
+
+/*   +++++++++++   */
+
+/*   FRONTPAGE   */
+
+/*   HEADER   */
+
+/*   ++++   */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header section {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 3.5rem;
+    margin: 0.7rem 0rem 0rem 0.7rem;
+    animation: logo-rotation 8s linear;
+}
+
+@keyframes logo-rotation {
+    0% {
+        transform: rotate(-360deg);
+    }
+}
+
+#logo-header {
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 0.5rem 2rem 0rem 1rem;
+}
+
+header a {
+    font-size: 1.5rem;
+    margin: 0.7rem 1.5rem 0rem 0rem;
+    font-family: var(--ff--Opensans);
+}
+
+/*   ++++++++   */
+
+/*   HEADER   */
+
+/*   HALFPAGE   */
+
+/*   ++++++   */
+
+#halfpage {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*   ++++++++++   */
+
+/*   HALFPAGE   */
+
+/*   SEARCHSECTION   */
+
+/*   +++++++++++   */
+
+#search-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#h1 {
+    margin-top: 6rem;
+}
+
+#searchbar {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0rem 0rem 2rem;
+}
+
+#searchbar input {
+    width: 25rem;
+    height: 2.6rem;
+    padding: 0.2rem 0rem 0rem 2.3rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1.6rem;
+    background: url(./images/location.svg) no-repeat white;
+    background-size: 1.2rem;
+    background-position: 0.7rem;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    margin: 0rem 1rem 0rem 0rem;
+    height: 1rem;
+    width: 1rem;
+    background: url(./images/close-button-orange.svg);
+    background-size: 1rem 1rem;
+}
+
+#searchbar button {
+    color: white;
+    margin: 0rem 0rem 0rem 1rem;
+    border-radius: 0.2rem;
+    padding: 0.5rem 0.7rem;
+    background: var(--cl--Orange);
+    font-family: var(--ff--Opensans);
+    font-weight: 600;
+    border: none;
+    font-size: 1.5rem;
+}
+
+#search-section button:hover {
+    cursor: pointer;
+}
+
+#h2 {
+    margin-top: 2rem;
+}
+
+#place-saver {
+    display: flex;
+    flex-wrap: wrap;
+    width: 35rem;
+    height: 11rem;
+    overflow: hidden;
+    align-content: flex-start;
+    margin: 1.5rem 0rem 0rem 2rem;
+}
+
+.place-saver {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--cl--Green6);
+    padding: 0.4rem 1rem 0.4rem 1rem;
+    border-radius: 2rem;
+    margin: 0.5rem;
+}
+
+.place-saver img {
+    width: 1rem;
+    margin-left: 1rem;
+    display: none;
+}
+
+.place-saver:hover img {
+    display: block;
+}
+
+.place-saver img:hover {
+    cursor: pointer;
+}
+
+/*   +++++++++++++++   */
+
+/*   SEARCHSECTION   */
+
+/*   DATASECTION   */
+
+/*   +++++++++   */
+
+#data-section {
+    position: relative;
+    display: flex;
+    margin: 3rem 0rem 0rem 0rem;
+}
+
+#all-rec {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: -20rem;
+    margin-top: 0.72rem;
+}
+
+.rec {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 70px;
+    background: linear-gradient(rgba(245, 245, 245, 0.3), rgba(245, 245, 245, 0.3));
+    margin: 0.3rem;
+}
+
+.inner-rec {
+    margin: 0rem 3rem 0rem 1rem;
+}
+
+#behaviour {
+    width: 4rem;
+}
+
+#inner-rec {
+    display: flex;
+    align-content: baseline;
+    font-size: 2rem;
+}
+
+#inner-rec img {
+    width: 0.7rem;
+}
+
+#data-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background: var(--cl--DarkGreen1);
+    border-radius: 15rem 0rem 0rem 15rem;
+    border: solid 1.5rem var(--cl--DarkGreen2);
+    border-right: 0rem;
+    z-index: 1;
+}
+
+#data-view-timer {
+    font-size: 2rem;
+    align-self: flex-end;
+    margin-right: 1rem;
+}
+
+#data-view-temp {
+    display: flex;
+    align-items: baseline;
+    font-size: 3rem;
+    margin-left: 3rem;
+}
+
+#data-view-temp img {
+    width: 0.8rem;
+}
+
+#data-view-location img {
+    width: 1.6rem;
+    margin-right: 0.5rem;
+}
+
+#data-view-location {
+    display: flex;
+    align-items: center;
+    font-size: 2.3rem;
+    align-self: flex-start;
+    margin: 1.5rem 0rem 0rem 3rem;
+}
+
+#data-view-behaviour {
+    width: 15rem;
+    margin: -0.5rem 0rem 0rem 6rem;
+}
+
+#data-view-wind {
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    margin: 2.5rem 1rem 0rem 0rem;
+    font-size: 2rem;
+}
+
+#data-view-wind img {
+    width: 4rem;
+    margin-right: 1rem;
+}
+
+/*   +++++++++++++   */
+
+/*   DATASECTION   */

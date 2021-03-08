@@ -18,7 +18,6 @@ submit.addEventListener('click',(e)=>{
             }
             message1.textContent = data.location
             message2.textContent = data.forecastdata
-
         })
     })
 })

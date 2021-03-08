@@ -1,7 +1,6 @@
 const request = require('request')
 const geocode = require('../Utils/geocode')
 
-
 const weatherstack = (longitude, latitude, callback) => {
     const weatherstackurl = 'http://api.weatherstack.com/current?access_key=59f9a38c6cd968dfe0c7397b9b031b97&query=' + longitude + ',' + latitude + '&units = m'
     request({ url: weatherstackurl, json: true }, (error, response) => {
@@ -34,7 +33,5 @@ const weatherstack = (longitude, latitude, callback) => {
 //         }
 //     }
 // )
-
-
 
 module.exports = weatherstack
